@@ -1,11 +1,11 @@
-#spring:
-#  redis:
-#    host: 192.168.1.172
-#    port: 6379
-#    password: 123@qaz
-#    lettuce:
-#      pool:
-#        max-active: 5
-#        max-idle: 5
-#        min-idle: 2
-#        max-wait: 100
+spring:
+  redis:
+    host: 192.168.1.172
+    port: 6379
+    password: 123@qaz
+    lettuce:
+      pool:
+        max-active: 5
+        max-idle: 5
+        min-idle: 2
+        max-wait: 100

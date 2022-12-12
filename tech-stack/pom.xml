@@ -14,17 +14,19 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
-        <!-- Revision -->
+        <!-- revision -->
         <revision>1.0-SNAPSHOT</revision>
-        <!-- Junit -->
+        <!-- junit -->
         <junit.version>5.9.1</junit.version>
-        <!-- Dom4j -->
+        <!-- dom4j -->
         <dom4j.version>1.6.1</dom4j.version>
         <!-- commons-lang3 -->
         <commons-lang3.version>3.12.0</commons-lang3.version>
-        <!-- Spring boot -->
+        <!-- lombok -->
+        <lombok.version>1.18.24</lombok.version>
+        <!-- spring boot -->
         <spring-boot-dependencies.version>2.7.6</spring-boot-dependencies.version>
-        <!-- Jedis -->
+        <!-- jedis -->
         <jedis.version>4.3.1</jedis.version>
         <!-- commons-pool2 -->
         <commons-pool2.version>2.11.1</commons-pool2.version>
@@ -32,7 +34,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- Junit -->
+            <!-- junit -->
             <dependency>
                 <groupId>org.junit</groupId>
                 <artifactId>junit-bom</artifactId>
@@ -40,7 +42,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- Dom4j -->
+            <!-- dom4j -->
             <dependency>
                 <groupId>dom4j</groupId>
                 <artifactId>dom4j</artifactId>
@@ -52,7 +54,14 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
             </dependency>
-            <!-- Spring boot -->
+            <!-- lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- spring boot -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -60,7 +69,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- Jedis -->
+            <!-- jedis -->
             <dependency>
                 <groupId>redis.clients</groupId>
                 <artifactId>jedis</artifactId>

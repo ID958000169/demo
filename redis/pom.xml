@@ -13,7 +13,12 @@
     <artifactId>redis</artifactId>
 
     <dependencies>
-        <!-- Jedis -->
+        <!-- jedis -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- jedis -->
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>

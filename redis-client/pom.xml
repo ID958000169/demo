@@ -8,17 +8,7 @@
         <groupId>org.zgy.demo</groupId>
         <artifactId>tech-stack</artifactId>
         <version>${revision}</version>
-        <relativePath>/tech-stack/pom.xml</relativePath>
+        <relativePath>../tech-stack/pom.xml</relativePath>
     </parent>
-    <artifactId>demo</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>tech-stack</module>
-        <module>spring-boot</module>
-        <module>redis</module>
-        <module>redis-client</module>
-        <module>pay-calculation-system</module>
-        <module>test</module>
-    </modules>
+    <artifactId>redis-client</artifactId>
 </project>

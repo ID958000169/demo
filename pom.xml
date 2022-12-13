@@ -17,7 +17,6 @@
         <module>tech-stack</module>
         <module>spring-boot</module>
         <module>redis</module>
-        <module>redis-client</module>
         <module>pay-calculation-system</module>
         <module>test</module>
     </modules>

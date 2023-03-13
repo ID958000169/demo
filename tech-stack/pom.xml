@@ -30,6 +30,10 @@
         <jedis.version>4.3.1</jedis.version>
         <!-- commons-pool2 -->
         <commons-pool2.version>2.11.1</commons-pool2.version>
+        <!-- mybatis -->
+        <mybatis.version>3.5.11</mybatis.version>
+        <!-- mysql -->
+        <mysql.version>8.0.31</mysql.version>
     </properties>
 
     <dependencyManagement>
@@ -80,6 +84,23 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-pool2</artifactId>
                 <version>${commons-pool2.version}</version>
+            </dependency>
+            <!-- mybatis -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <!-- mysql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.zgy.demo</groupId>
+                <artifactId>utils</artifactId>
+                <version>${revision}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
